@@ -1,5 +1,7 @@
-import IndexPage from './IndexPage'
+import IndexPage from './IndexPage';
+import AboutPage from './AboutPage';
 
-export default {
-    IndexPage
+export {
+    IndexPage,
+    AboutPage
 }
