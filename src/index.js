@@ -1,6 +1,6 @@
 import dva from 'dva';
 import './index.css';
-
+import {browserHistory} from 'dva/router';
 // 1. Initialize
 const app = dva();
 
