@@ -14,3 +14,4 @@ AboutPage.propTypes = {
 };
 
 export default connect()(AboutPage);
+
