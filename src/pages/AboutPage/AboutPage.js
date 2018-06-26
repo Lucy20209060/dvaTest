@@ -1,11 +1,20 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './AboutPage.css';
+import { Link } from 'dva/router';
 
-function AboutPage() {
+function AboutPage({dispatch,num}) {
+
+  function deleteHandler(id) {
+    dispatch({
+      type: 'aboutModel/saveNum',
+      payload: id
+    });
+  }
+
   return (
     <div>
-      <h1>AboutPage</h1>
+      <h1 style={{cursor:'pointer'}} onClick={deleteHandler.bind(this,5)}>about page{num}</h1>
     </div>
   );
 }
@@ -13,5 +22,13 @@ function AboutPage() {
 AboutPage.propTypes = {
 };
 
-export default connect()(AboutPage);
+function mapStateToProps(state) {
+  const { num } = state.aboutModel;
+  return {
+    num
+  };
+}
+
+export default connect(mapStateToProps)(AboutPage);
+
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 import { Link } from 'dva/router';
-console.log(this.props)
+
 function IndexPage({dispatch,num}) {
 
   function deleteHandler(id) {
