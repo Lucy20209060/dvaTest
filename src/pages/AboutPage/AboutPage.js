@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './AboutPage.css';
 import { Link } from 'dva/router';
+import style from './AboutPage.scss';
 
 function AboutPage({dispatch,num}) {
 
@@ -13,8 +13,8 @@ function AboutPage({dispatch,num}) {
   }
 
   return (
-    <div>
-      <h1 style={{cursor:'pointer'}} onClick={deleteHandler.bind(this,5)}>about page{num}</h1>
+    <div className={style.aboutPage}>
+      <h1 onClick={deleteHandler.bind(this,5)}>about page{num}</h1>
     </div>
   );
 }
