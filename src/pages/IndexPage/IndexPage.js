@@ -7,7 +7,7 @@ function IndexPage({dispatch,num}) {
 
   function deleteHandler(id) {
     dispatch({
-      type: 'indexModel/saveNum',
+      type: 'indexModel/fetch',
       payload: id
     });
   }

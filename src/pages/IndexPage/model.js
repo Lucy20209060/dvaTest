@@ -11,16 +11,19 @@ export default {
     saveNum(state, action) {
       return { 
         ...state, 
-        num:action.payload
+        num:action.payload || 5
       };
     },
   },
   
   effects: {
     *fetch({ payload }, { call, put }) {  // eslint-disable-line
-      yield put({ 
-        type: 'saveNum' 
-      });
+      console.log(111)
+      // yield put({ 
+      //   type: 'saveNum',
+      //   payload: 45
+      // });
+      yield [put({type: 'saveNum', payload: 45 })]
     },
   },
   
