@@ -7,11 +7,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "antd": "^3.10.2",
     "dva": "^2.2.3",
-    "node-sass": "^4.9.4",
     "react": "^16.2.0",
+    "react-dnd": "^5.0.0",
     "react-dom": "^16.2.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "tmp": "^0.1.0"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",
@@ -23,6 +25,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.12.0",
+    "node-sass": "^4.11.0",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.0.0"
   },

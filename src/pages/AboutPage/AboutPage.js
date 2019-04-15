@@ -14,6 +14,10 @@ function AboutPage({dispatch,num}) {
 
   return (
     <div className={style.aboutPage}>
+
+
+
+
       <h1 onClick={deleteHandler.bind(this,5)}>about page{num}</h1>
     </div>
   );
